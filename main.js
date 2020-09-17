@@ -10,6 +10,12 @@ input.addEventListener("input", swapText)
 
 
 function swapText(){
-      textModified.innerHTML = `${input.value} is cool`
+      if(input.value) {
+      // textModified.innerHTML = `${input.value} is cool`
+      // or
+      textModified.innerText = input.value + " is cool"
+      } else {
+            textModified.innerText = "Please enter a name"
 
+      }
 }
